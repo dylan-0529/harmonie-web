@@ -1,157 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harmonie Cámaras Hiperbáricas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --beige: #eed09e;
-      --turquesa: #5dc1b9;
-      --arena: #dfc4a7;
-    }
 
-    * {
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos de FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2e0fc0f4a.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
       background-color: #fff;
       color: #333;
     }
 
     header {
-      background-color: var(--turquesa);
-      color: white;
-      padding: 20px 0;
+      background-color: #5dc1b9;
+      padding: 30px 20px;
       text-align: center;
+      color: white;
     }
 
-    nav {
-      background-color: white;
-      padding: 10px 0;
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    main {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    main img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .botones {
       display: flex;
       justify-content: center;
       gap: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
     }
 
-    nav a {
-      text-decoration: none;
-      color: var(--turquesa);
-      font-weight: 600;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .hero {
-      background-color: var(--arena);
-      padding: 80px 20px;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .btn-group a {
-      text-decoration: none;
-      color: white;
-      background-color: var(--turquesa);
+    .botones a {
       padding: 15px 25px;
-      border-radius: 8px;
-      margin: 0 10px;
-      display: inline-block;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
     }
 
-    .icon-bar {
-      margin-top: 30px;
-      font-size: 1.5rem;
+    .whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebe58;
+    }
+
+    .calendar {
+      background-color: #4285F4;
+      color: white;
+    }
+
+    .calendar:hover {
+      background-color: #3367d6;
     }
 
     footer {
-      background-color: #f3f3f3;
-      color: #666;
-      padding: 20px;
+      background-color: #dfc4a7;
       text-align: center;
-      font-size: 0.9rem;
-    }
-
-    img.temp-img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      margin-bottom: 30px;
-      border-radius: 12px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #333;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a2e0c9f82f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <h1>Harmonie Cámaras Hiperbáricas</h1>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#que-es">¿Qué es?</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <main>
+    <img src="https://via.placeholder.com/600x300" alt="Imagen de portada">
+    <p>
+      Bienvenido a Harmonie, donde la salud y la tecnología se unen. Nuestro tratamiento con cámara hiperbárica ofrece bienestar, recuperación celular y energía renovada.
+    </p>
 
-  <section class="hero" id="inicio">
-    <img src="https://via.placeholder.com/600x300?text=Imagen+de+Prueba" alt="Imagen" class="temp-img">
-    <h1>Bienvenido a Harmonie</h1>
-    <p>Donde la salud y la tecnología se unen. Nuestro tratamiento con cámara hiperbárica ofrece bienestar, recuperación celular y energía renovada.</p>
-    <div class="btn-group">
-      <a href="https://wa.me/573016932363" target="_blank">Agendar por WhatsApp</a>
-      <a href="#">Agendar en Google Calendar</a>
+    <div class="botones">
+      <a href="https://wa.me/573016932363" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
+      </a>
+      <a href="#" class="calendar" target="_blank">
+        <i class="fas fa-calendar-alt"></i> Agendar en Google Calendar
+      </a>
     </div>
-    <div class="icon-bar">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-  </section>
-
-  <section id="que-es">
-    <h2>¿Qué es la cámara hiperbárica?</h2>
-    <p>La cámara hiperbárica es un tratamiento médico no invasivo donde el paciente respira oxígeno puro en una cámara presurizada para promover la recuperación celular.</p>
-  </section>
-
-  <section id="beneficios">
-    <h2>Beneficios</h2>
-    <p>Oxigenación profunda, aceleración de la recuperación, mejor circulación, reducción de inflamaciones, y apoyo al sistema inmunológico.</p>
-  </section>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <p>Sesiones individuales, paquetes mensuales, terapia combinada con fisioterapia, asesoramiento personalizado.</p>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Agenda tu cita ahora o escríbenos por redes sociales. También puedes visitarnos en nuestra sede física.</p>
-  </section>
+  </main>
 
   <footer>
     © 2025 Harmonie Cámaras Hiperbáricas
